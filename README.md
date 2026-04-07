@@ -28,7 +28,6 @@ Data Source → Kafka → PySpark Streaming → ML Prediction → Risk Scoring �
    - Accept Order
    - Change Shipping Mode
    - Reduce Discount
-   - 
    - Reject Order
 
 ## Output Example
