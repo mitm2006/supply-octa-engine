@@ -12,7 +12,7 @@ producer = KafkaProducer(
 
 topic = "supply_chain"
 
-for _, row in df.head(10000).iterrows():  # send only 100 first
+for _, row in df.head(10000).iterrows():  
     producer.send(topic, row.to_dict())
     print("Sent one row")
     time.sleep(1)

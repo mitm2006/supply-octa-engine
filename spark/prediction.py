@@ -16,7 +16,6 @@ def predict_delay(row):
         for c in feature_cols:
             v = row[c]
             if c in label_enc:
-                # encode categorical; fall back to -1 for unseen labels
                 try:
                     v = int(label_enc[c].transform([str(v)])[0])
                 except Exception:
