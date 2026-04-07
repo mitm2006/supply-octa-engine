@@ -1,0 +1,21 @@
+Start Zookeeper
+cd C:\kafka\kafka_2.12-3.9.2
+.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+
+Start Kafka Server
+cd C:\kafka\kafka_2.12-3.9.2
+.\bin\windows\kafka-server-start.bat .\config\server.properties
+
+Create Topic
+cd C:\kafka\kafka_2.12-3.9.2
+.\bin\windows\kafka-topics.bat --create --topic supply_chain --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
+Verify Topic
+.\bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9092
+
+Kafka Producer
+python producer.py
+
+$env:JAVA_HOME="C:\Java\jdk1.8.0_481"
+$env:SPARK_HOME="C:\spark\spark-3.3.4-bin-hadoop3"
+$env:PATH="$env:SPARK_HOME\bin;$env:JAVA_HOME\bin;$env:PATH"
+python main.py
