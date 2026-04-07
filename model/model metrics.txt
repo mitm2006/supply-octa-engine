@@ -1,0 +1,7 @@
+
+Model Performance:
+MAE : 0.47458984682635286
+RMSE: 0.6504902128033401
+R2  : 0.808357270519392
+
+Model and preprocessing objects saved successfully!

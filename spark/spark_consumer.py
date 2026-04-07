@@ -19,8 +19,8 @@ def format_output(df, epoch_id):
         print(f"Customer Segment: {row['Customer Segment']}")
 
         print("\n----- PREDICTION -----")
-        print(f"Predicted Delay: {row['pred_delay']}")
-        print(f"Predicted Profit: {row['pred_profit']}")
+        print(f"Predicted Delay: {row['pred_delay']:.2f} days")
+        print(f"Predicted Profit: ${row['pred_profit']:.2f}")
 
         print("\n----- RISK ANALYSIS -----")
         print(f"Risk Score: {row['risk_score']}")
