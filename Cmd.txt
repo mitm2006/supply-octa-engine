@@ -19,3 +19,7 @@ $env:JAVA_HOME="C:\Java\jdk1.8.0_481"
 $env:SPARK_HOME="C:\spark\spark-3.3.4-bin-hadoop3"
 $env:PATH="$env:SPARK_HOME\bin;$env:JAVA_HOME\bin;$env:PATH"
 python main.py
+
+
+KILL JAVA:
+taskkill /F /IM java.exe
